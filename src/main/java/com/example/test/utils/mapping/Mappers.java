@@ -17,4 +17,23 @@ public class Mappers {
         return desktopComputer;
     }
 
+    public DesktopComputer updateDesktop(DesktopDto desktopDto, DesktopComputer desktopComputer) {
+        if (desktopDto.getSerialNumber() != null) {
+            desktopComputer.setSerialNumber(desktopDto.getSerialNumber());
+        }
+        if (desktopDto.getCount() != null) {
+            desktopComputer.setCount(desktopDto.getCount());
+        }
+        if (desktopDto.getPrice() != null) {
+            desktopComputer.setPrice(desktopDto.getPrice());
+        }
+        if (desktopDto.getManufacturer() != null) {
+            desktopComputer.setManufacturer(desktopDto.getManufacturer());
+        }
+        if (desktopDto.getFormFactor() != null) {
+            desktopComputer.setFormFactor(desktopDto.getFormFactor());
+        }
+        return desktopComputer;
+    }
+
 }

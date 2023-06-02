@@ -8,6 +8,7 @@ import java.math.BigInteger;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.validation.constraints.NotBlank;
 
 @MappedSuperclass

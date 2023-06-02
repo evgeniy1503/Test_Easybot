@@ -4,12 +4,13 @@ import com.example.test.dto.DesktopDto;
 import com.example.test.model.DesktopComputer;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface DesktopService {
 
     DesktopComputer create(DesktopDto desktopDto);
-    DesktopComputer update(DesktopDto desktopDto, Long id);
+    DesktopComputer update(DesktopDto desktopDto, String serialNumber);
     List<DesktopComputer> getAll();
-    DesktopComputer getById(Long id);
+    Optional<DesktopComputer> getById(String serialNumber);
 
 }

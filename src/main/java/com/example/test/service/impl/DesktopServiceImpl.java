@@ -8,7 +8,6 @@ import com.example.test.utils.mapping.Mappers;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,16 +23,17 @@ public class DesktopServiceImpl implements DesktopService {
     public DesktopComputer create(DesktopDto desktopDto) {
         DesktopComputer desktop = desktopRepository.findDesktopComputerBySerialNumber(desktopDto.getSerialNumber());
         if (desktop != null) {
-            desktop.setCount(desktop.getCount().add(desktopDto.getCount()));
-            return desktopRepository.save(desktop);
+            return desktop;
         }
         desktop = mappers.toDesktop(desktopDto);
         return desktopRepository.save(desktop);
     }
 
     @Override
-    public DesktopComputer update(DesktopDto desktopDto, Long id) {
-        return null;
+    public DesktopComputer update(DesktopDto desktopDto, String serialNumber) {
+        DesktopComputer updateDesktop = desktopRepository.findById(serialNumber).orElseThrow();
+        DesktopComputer desktopComputer = mappers.updateDesktop(desktopDto, updateDesktop);
+        return desktopRepository.save(desktopComputer);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class DesktopServiceImpl implements DesktopService {
     }
 
     @Override
-    public DesktopComputer getById(Long id) {
-        return null;
+    public Optional<DesktopComputer> getById(String serialNumber) {
+        return desktopRepository.findById(serialNumber);
     }
 }

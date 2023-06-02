@@ -1,18 +1,17 @@
 databaseChangeLog:
 - changeSet:
-    id: 1685692759159-1
+    id: 1685698313262-1
     author: evgeniy (generated)
     changes:
     - createTable:
         columns:
         - column:
-            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
               primaryKeyName: desktopPK
-            name: id
-            type: BIGINT
+            name: serial_number
+            type: VARCHAR(255)
         - column:
             name: count
             type: NUMBER(19, 2)
@@ -22,27 +21,23 @@ databaseChangeLog:
         - column:
             name: price
             type: NUMBER(19, 2)
-        - column:
-            name: serial_number
-            type: VARCHAR(255)
         - column:
             name: form_factor
             type: INT
         tableName: desktop
 - changeSet:
-    id: 1685692759159-2
+    id: 1685698313262-2
     author: evgeniy (generated)
     changes:
     - createTable:
         columns:
         - column:
-            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
               primaryKeyName: hardPK
-            name: id
-            type: BIGINT
+            name: serial_number
+            type: VARCHAR(255)
         - column:
             name: count
             type: NUMBER(19, 2)
@@ -52,9 +47,6 @@ databaseChangeLog:
         - column:
             name: price
             type: NUMBER(19, 2)
-        - column:
-            name: serial_number
-            type: VARCHAR(255)
         - column:
             constraints:
               nullable: false
@@ -62,19 +54,18 @@ databaseChangeLog:
             type: INT
         tableName: hard
 - changeSet:
-    id: 1685692759159-3
+    id: 1685698313262-3
     author: evgeniy (generated)
     changes:
     - createTable:
         columns:
         - column:
-            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
               primaryKeyName: laptopPK
-            name: id
-            type: BIGINT
+            name: serial_number
+            type: VARCHAR(255)
         - column:
             name: count
             type: NUMBER(19, 2)
@@ -84,27 +75,23 @@ databaseChangeLog:
         - column:
             name: price
             type: NUMBER(19, 2)
-        - column:
-            name: serial_number
-            type: VARCHAR(255)
         - column:
             name: laptop_size
             type: INT
         tableName: laptop
 - changeSet:
-    id: 1685692759159-4
+    id: 1685698313262-4
     author: evgeniy (generated)
     changes:
     - createTable:
         columns:
         - column:
-            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
               primaryKeyName: monitorPK
-            name: id
-            type: BIGINT
+            name: serial_number
+            type: VARCHAR(255)
         - column:
             name: count
             type: NUMBER(19, 2)
@@ -114,9 +101,6 @@ databaseChangeLog:
         - column:
             name: price
             type: NUMBER(19, 2)
-        - column:
-            name: serial_number
-            type: VARCHAR(255)
         - column:
             constraints:
               nullable: false
