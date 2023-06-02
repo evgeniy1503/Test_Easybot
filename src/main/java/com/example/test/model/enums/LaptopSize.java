@@ -2,7 +2,7 @@ package com.example.test.model.enums;
 
 public enum LaptopSize {
 
-    THIRTEEN(13), FOURTEEN(14), FIFTEEN(15), SEVENTEEN(17);
+    THIRTEEN(0), FOURTEEN(1), FIFTEEN(2), SEVENTEEN(3);
     private final int value;
 
 

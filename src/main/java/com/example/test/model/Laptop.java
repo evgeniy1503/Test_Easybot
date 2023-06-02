@@ -18,6 +18,5 @@ import javax.validation.constraints.NotBlank;
 @Table(name = "laptop")
 public class Laptop extends AbstractGoods {
 
-    @NotBlank
     private LaptopSize laptopSize;
 }

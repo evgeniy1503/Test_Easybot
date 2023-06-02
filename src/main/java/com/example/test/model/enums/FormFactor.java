@@ -2,16 +2,16 @@ package com.example.test.model.enums;
 
 public enum FormFactor {
 
-    DESKTOP("Desktop"), NETTOP("Nottop"), MONOBLOCK("Monoblock");
+    DESKTOP(0), NETTOP(1), MONOBLOCK(2);
 
-    private final String value;
+    private final int value;
 
 
-    FormFactor(String value) {
+    FormFactor(int value) {
         this.value = value;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
     }
 }

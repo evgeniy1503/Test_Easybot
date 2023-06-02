@@ -18,5 +18,5 @@ import javax.validation.constraints.NotBlank;
 public class Monitor extends AbstractGoods {
 
     @NotBlank
-    private int diagonal;
+    private Integer diagonal;
 }

@@ -16,6 +16,6 @@ import javax.persistence.Table;
 @Table(name = "hard")
 public class HardDrive extends AbstractGoods {
 
-    private int volume;
+    private Integer volume;
 
 }
