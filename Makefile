@@ -11,9 +11,6 @@ install:
 	./gradlew installDist
 
 
-test:
-	./gradlew test
-
 generate-migrations:
 	gradle diffChangeLog
 
