@@ -34,3 +34,7 @@ make start
 
 http://localhost:8181/h2console/
 
+### OpenAPI Swagger
+
+http://localhost:8181/swagger-ui/index.html#/
+
