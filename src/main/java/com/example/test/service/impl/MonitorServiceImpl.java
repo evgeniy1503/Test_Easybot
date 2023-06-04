@@ -1,11 +1,10 @@
 package com.example.test.service.impl;
 
 import com.example.test.dto.MonitorDto;
-import com.example.test.model.Laptop;
 import com.example.test.model.Monitor;
 import com.example.test.repository.MonitorRepository;
 import com.example.test.service.MonitorService;
-import com.example.test.utils.mapping.Mappers;
+import com.example.test.utils.Mappers;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -4,7 +4,7 @@ import com.example.test.dto.DesktopDto;
 import com.example.test.model.DesktopComputer;
 import com.example.test.repository.DesktopRepository;
 import com.example.test.service.DesktopService;
-import com.example.test.utils.mapping.Mappers;
+import com.example.test.utils.Mappers;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

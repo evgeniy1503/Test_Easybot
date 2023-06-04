@@ -1,4 +1,4 @@
-package com.example.test.utils.mapping;
+package com.example.test.utils;
 
 import com.example.test.dto.DesktopDto;
 import com.example.test.dto.HardDriveDto;

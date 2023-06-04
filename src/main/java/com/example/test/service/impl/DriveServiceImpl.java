@@ -1,12 +1,10 @@
 package com.example.test.service.impl;
 
 import com.example.test.dto.HardDriveDto;
-import com.example.test.model.DesktopComputer;
 import com.example.test.model.HardDrive;
-import com.example.test.repository.DesktopRepository;
 import com.example.test.repository.DriveRepository;
 import com.example.test.service.DriveService;
-import com.example.test.utils.mapping.Mappers;
+import com.example.test.utils.Mappers;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
