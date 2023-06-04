@@ -9,6 +9,7 @@
 3. Lombok
 4. Gradle
 5. Liquibase
+6. Swagger
 
 ### Разработка
 
@@ -29,6 +30,7 @@ make build
 ```bash
 make start
 ```
+Проект запускается на порту http://localhost:8181/
 
 ### Подключение к базе данных
 
